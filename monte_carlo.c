@@ -4,6 +4,7 @@
 #include <math.h>
 
 float mc_pi(int);
+int count=0;
 
 float frandom() {
   long int q = random();
@@ -41,7 +42,7 @@ int main(void) {
 
 float mc_pi(int n)
 {
- int count=0;
+
  for(int y=0;y<n;y++){
   float s=frandom();
   float t=frandom();
