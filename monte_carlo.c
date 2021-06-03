@@ -43,7 +43,7 @@ int main(void) {
 float mc_pi(int n)
 {
 
- for(int y=0;y<n;y++){
+ for(int y=0;y<=n;y++){
   float s=frandom();
   float t=frandom();
   int z=s*s+t*t;
