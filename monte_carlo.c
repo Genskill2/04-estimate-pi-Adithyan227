@@ -4,7 +4,7 @@
 #include <math.h>
 
 float mc_pi(int);
-int count=0;
+
 
 float frandom() {
   long int q = random();
@@ -40,20 +40,32 @@ int main(void) {
   }
 }
 
-float mc_pi(int n)
+float mc_pi(int i)
 {
-
- for(int y=0;y<=n;y++)
- {
-  float s=frandom();
-  float t=frandom();
-  int z=s*s+t*t;
-  if(z<=1) 
-    count++;
- } 
-float pi=(float)count/n*4;
-return pi;
+  int c=0;
+  for(int j=1;j<=i;j++)
+  {
+    float x=frandom();
+    float y=frandom();
+    if((x*x+y*y)<=1)
+      c+=1;
+  }
+  c=c*4;
+  return (float)c/i;
 }
+
+
+
+
+  
+  
+
+
+
+
+
+
+
 
 
 
